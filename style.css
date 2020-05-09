@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(115, 237, 238);
+  background: linear-gradient(
+    0deg,
+    rgba(115, 237, 238, 1) 0%,
+    rgba(255, 231, 180, 1) 100%
+  );
+}
+.upper-text {
+  padding-top: 2rem;
+  font-family: "Rock Salt", cursive;
+  color: rgb(63, 126, 126);
+  font-size: 3rem;
+}
+@media screen and (max-width: 1024px) {
+  #todo-input {
+    width: 150px;
+  }
+  #czas,
+  footer {
+    opacity: 0;
+  }
+}
+#todo-input,
+.todo-button,
+#list-delete,
+#list-done {
+  margin: 0;
+  border: none;
+  padding: 0.6rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.todo-button {
+  color: rgb(63, 126, 126);
+  background-color: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+.todo-button:hover {
+  background-color: rgb(63, 126, 126);
+  color: white;
+}
+.todo-filter {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+.filter-button {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  padding: 0.6rem 0.5rem;
+  background-color: rgb(63, 126, 126);
+  width: 33%;
+  border: 0;
+  text-transform: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+.filter-button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(63, 126, 126);
+}
+
+.note-list {
+  margin-top: 1rem;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: all 0.5s ease;
+}
+
+.listel-cont {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  margin: 2px;
+  transition: all 0.5s ease;
+}
+.todolist {
+  background-color: cornsilk;
+  width: 95%;
+  line-height: 3rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}
+.todolist span {
+  word-wrap: break-word;
+  margin: 15px;
+}
+#list-delete {
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  background-color: rgb(255, 35, 79);
+  transition: all 0.3s ease;
+}
+#list-delete:hover,
+#list-done:hover {
+  background-color: rgb(255, 255, 255);
+  padding: 0 2.2rem;
+}
+#list-done {
+  margin: 0;
+  padding: 0 0.9rem;
+  font-size: 1.2rem;
+  background-color: rgb(70, 240, 98);
+  transition: all 0.3s ease;
+}
+#list-done:hover {
+  color: rgb(70, 240, 98);
+}
+.fa-check-square,
+.fa-trash-alt {
+  pointer-events: none;
+}
+.list-grey {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+.no-active {
+  display: none;
+}
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+footer h1 {
+  color: rgb(63, 126, 126);
+  font-size: 0.8rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding-right: 15px;
+}
+footer h1 span {
+  margin: auto;
+  font-size: 1.2rem;
+  font-family: "Pacifico", cursive;
+  font-weight: 200;
+}
+#czas {
+  position: fixed;
+  bottom: 2rem;
+  left: 0rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.godzina,
+#datum {
+  font-family: "Lobster Two", cursive;
+  color: rgb(63, 126, 126);
+  margin-left: 20px;
+}
+.godzina {
+  font-size: 4rem;
+  font-family: "Ubuntu Mono", monospace;
+}
+#datum {
+  font-size: 22px;
+  line-height: 0;
+  letter-spacing: 0.2em;
+  align-self: center;
+  justify-self: center;
+}

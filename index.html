@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="notatnik" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Open+Sans&family=Roboto&family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+    </style>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <head>
+      <h1 class="upper-text">What's next?</h1>
+    </head>
+    <div id="czas">
+      <div class="godzina">...</div>
+      <div id="datum"></div>
+    </div>
+    <div class="main">
+      <div class="input-space">
+        <form>
+          <input type="text" id="todo-input" autocomplete="off" />
+          <button id="add" class="todo-button" type="submit">
+            <i class="far fa-plus-square"></i>
+          </button>
+          <button id="undo" class="todo-button">
+            <i class="fas fa-undo"></i>
+          </button>
+        </form>
+      </div>
+      <div class="todo-filter">
+        <button class="filter-button" id="done-filter" type="submit">
+          Done
+        </button>
+        <button class="filter-button" id="undone-filter" type="submit">
+          Undone
+        </button>
+        <button class="filter-button" id="all-filter" type="submit">All</button>
+      </div>
+      <div class="notes-cont">
+        <ul class="note-list">
+          <!--<div class="listel-cont">
+            <li class="todolist"><span>ttes</span></li>
+            <button id="list-done" type="submit"><i class="fas fa-check-square"></i></button>
+            <button id="list-delete" type="submit">
+              <i class="far fa-trash-alt"></i>
+            </button>
+          </div>
+          <div class="listel-cont">
+            <li class="todolist"><span>Testerito de capito</span></li>
+            <button id="list-done" type="submit"><i class="fas fa-check-square"></i></button>
+            <button id="list-delete" type="submit">
+              <i class="far fa-trash-alt"></i>
+            </button>
+          </div>-->
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <h1>Created by <span>Bauza</span></h1>
+    </footer>
+    <script src="./godzina.js"></script>
+    <script src="./script.js" async defer></script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+1. rozjezdza sie przy duzym wpisie
+2. wysuwana lista notatek pobocznych
+3. animacje
+4. komunikat brak wpisu
